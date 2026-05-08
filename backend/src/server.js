@@ -18,5 +18,5 @@ const app = express();
 //Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/api/phong", PhongRoute);
-app.use("/api/user", UserRouter);
+app.use("/v1/api/phong", PhongRoute);
+app.use("/v1/api/user", UserRouter);
